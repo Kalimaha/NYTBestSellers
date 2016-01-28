@@ -1,0 +1,2 @@
+# DocsBrowser
+Simple AngularJS project.
