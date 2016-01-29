@@ -1,23 +1,42 @@
 <!doctype html>
-<html ng-app>
+<html>
     <head>
+        <title>DocsBrowser</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="format-detection" content="telephone=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
+        <script src = "http://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular-route.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src="src/js/app.js"></script>
+        <script src="src/js/router.js"></script>
+        <script src="src/js/controllers/welcome-controller.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel="stylesheet" href="src/css/DocsBrowser.css">
     </head>
-    <body>
-        <div class="container">
+    <body ng-app="DocsBrowser">
+        <div class="container-fluid">
+            <div class="row dark">
+                <div class="col-lg-3">
+                    <div class="logo-text">
+                        <b>FAO</b>STAT<b>API</b>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    &nbsp;
+                </div>
+            </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <label>Name:</label>
-                    <input type="text" ng-model="yourName" placeholder="Enter a name here">
-                    <hr>
-                    <h1>Hello {{yourName}}!</h1>
+                <div class="col-lg-3 light">
+                    &nbsp;
+                </div>
+                <div class="col-lg-9">
+                    <div ng-view>
+
+                    </div>
                 </div>
             </div>
         </div>
