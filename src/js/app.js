@@ -2,6 +2,6 @@
 
     'use strict';
 
-    var app = angular.module('DocsBrowser', []);
+    var app = angular.module('NYTMovieReviews', []);
 
 }());

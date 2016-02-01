@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var app = angular.module('DocsBrowser', ['ngRoute']);
+    var app = angular.module('NYTMovieReviews', ['ngRoute']);
 
     app.config(function ($routeProvider) {
         $routeProvider.when('/welcome', {
