@@ -1,0 +1,22 @@
+<h1>
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <i class="fa fa-spinner fa-pulse fa-5x" ng-hide="movies.length"></i>
+        </div>
+        <div ng-repeat="movie in movies">
+            <div class="col-lg-4">
+                <div class="thumbnail">
+                    <img class="img-rounded" src="{{movie.multimedia.resource.src}}">
+                    <div class="caption">
+                        <h5>
+                            {{movie.headline}}
+                        </h5>
+                        <h5>
+                            by {{movie.byline}}
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</h1>

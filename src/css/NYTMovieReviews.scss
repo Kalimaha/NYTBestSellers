@@ -22,7 +22,7 @@
 
 .logo-text {
   color: #ffffff;
-  font-weight: 100;
+  //font-weight: 100;
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-family: EnglishTowne, serif;
@@ -30,4 +30,8 @@
     font-family: Metropolis, serif;
     color: #ffffff;
   }
+}
+
+.thumbnail {
+  min-height: 5rem !important;
 }

@@ -14,6 +14,9 @@
         <script src="src/js/app.js"></script>
         <script src="src/js/router.js"></script>
         <script src="src/js/controllers/welcome-controller.js"></script>
+        <script src="src/js/controllers/movies-controller.js"></script>
+        <script src="src/js/controllers/single-movie-controller.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="src/css/NYTMovieReviews.css">
     </head>
@@ -29,28 +32,12 @@
         </div>
         <div class="container">
             <div class="row">
-                <div class="col-lg-9">
+                <div class="col-lg-12">
                     <div ng-view>
 
                     </div>
                 </div>
             </div>
         </div>
-        <script type="application/javascript">
-            $.ajax({
-                type: 'GET',
-                url: 'http://api.nytimes.com/svc/movies/v2/reviews/all.json?order=by-publication-date&api-key=sample-key',
-                success: function (response) {
-                    var idx = 10;
-                    console.log(response.results[idx]);
-                    console.log(response.results[idx].display_title);
-                    console.log(response.results[idx].byline);
-                    console.log(response.results[idx].link.url);
-                    console.log(response.results[idx].headline);
-                    console.log(response.results[idx].summary_short);
-                    console.log(response.results[idx].multimedia.resource.src);
-                }
-            })
-        </script>
     </body>
 </html>
