@@ -2,6 +2,6 @@
 
     'use strict';
 
-    var app = angular.module('NYTMovieReviews', []);
+    var app = angular.module('NYTBookReviews', []);
 
 }());

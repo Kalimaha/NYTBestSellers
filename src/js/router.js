@@ -2,17 +2,20 @@
 
     'use strict';
 
-    var app = angular.module('NYTMovieReviews', ['ngRoute']);
+    var app = angular.module('NYTBookReviews', ['ngRoute']);
 
     app.config(function ($routeProvider) {
-        $routeProvider.when('/movies', {
-            templateUrl: 'src/html/movies.html',
-            controller: 'MoviesController'
-        }).when('/movies/:id', {
-            templateUrl: 'src/html/movie.html',
-            controller: 'SingleMovieController'
+        $routeProvider.when('/genres', {
+            templateUrl: 'src/html/genres.html',
+            controller: 'GenresController'
+        }).when('/genres/:id', {
+            templateUrl: 'src/html/genre.html',
+            controller: 'GenreController'
+        }).when('/genres/:id/:isbn', {
+            templateUrl: 'src/html/book.html',
+            controller: 'BookController'
         }).otherwise({
-            redirectTo: '/movies'
+            redirectTo: '/genres'
         });
     });
 
