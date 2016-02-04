@@ -18,10 +18,14 @@
   color: #ffffff;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: EnglishTowne, serif; }
+  margin-top: 0;
+  margin-bottom: 0; }
   .logo-text small {
     font-family: Metropolis, serif;
     color: #ffffff; }
+
+.nyt {
+  font-family: EnglishTowne, serif; }
 
 .thumbnail {
   min-height: 5rem !important; }
@@ -49,5 +53,8 @@
 
 button {
   width: 100% !important; }
+
+.v-space {
+  height: 8rem; }
 
 /*# sourceMappingURL=NYTMovieReviews.css.map */

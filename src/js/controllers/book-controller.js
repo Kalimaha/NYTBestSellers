@@ -7,7 +7,7 @@
     app.controller('BookController', function ($scope, $routeParams, $http) {
         $scope.id = $routeParams.id;
         $scope.isbn = $routeParams.isbn;
-        var url = 'http://api.nytimes.com/svc/books/v3/lists/' + $routeParams.id + '.json?sort-by=rank&sort-order=ASC&api-key=sample-key',
+        var url = 'http://api.nytimes.com/svc/books/v3/lists/' + $routeParams.genre + '.json?sort-by=rank&sort-order=ASC&api-key=sample-key',
             i,
             b;
         $http.get(url).then(function (response) {

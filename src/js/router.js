@@ -8,10 +8,10 @@
         $routeProvider.when('/genres', {
             templateUrl: 'src/html/genres.html',
             controller: 'GenresController'
-        }).when('/genres/:id', {
+        }).when('/genres/:genre', {
             templateUrl: 'src/html/genre.html',
             controller: 'GenreController'
-        }).when('/genres/:id/:isbn', {
+        }).when('/genres/:genre/:isbn', {
             templateUrl: 'src/html/book.html',
             controller: 'BookController'
         }).otherwise({
