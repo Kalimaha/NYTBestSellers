@@ -12,8 +12,7 @@
             templateUrl: 'src/html/genre.html',
             controller: 'GenreController'
         }).when('/genres/:genre/:isbn', {
-            templateUrl: 'src/html/book.html',
-            controller: 'BookController'
+            templateUrl: 'src/html/book.html'
         }).otherwise({
             redirectTo: '/genres'
         });
