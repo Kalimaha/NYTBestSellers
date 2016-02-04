@@ -24,11 +24,16 @@
   color: #ffffff;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  font-family: EnglishTowne, serif;
+  margin-top: 0;
+  margin-bottom: 0;
   small {
     font-family: Metropolis, serif;
     color: #ffffff;
   }
+}
+
+.nyt {
+  font-family: EnglishTowne, serif;
 }
 
 .thumbnail {
@@ -36,7 +41,7 @@
 }
 
 .thumbnail.book {
-  min-height: 625px !important;
+  min-height: 410px !important;
 }
 
 .date {
@@ -64,4 +69,8 @@
 
 button {
   width: 100% !important;
+}
+
+.v-space {
+  height: 8rem;
 }
