@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var app = angular.module('NYTBookReviews');
+    var app = angular.module('NYTBestSellers');
 
     app.controller('GenreController', function ($scope, $routeParams, $http) {
         var url = 'http://api.nytimes.com/svc/books/v3/lists/' + $routeParams.genre + '.json?sort-by=rank&sort-order=ASC&api-key=sample-key';

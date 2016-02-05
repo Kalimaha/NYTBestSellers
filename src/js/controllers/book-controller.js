@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var app = angular.module('NYTBookReviews');
+    var app = angular.module('NYTBestSellers');
 
     app.controller('BookController', function ($scope, $routeParams, $http) {
         $scope.id = $routeParams.id;

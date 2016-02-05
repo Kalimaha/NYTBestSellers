@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var app = angular.module('NYTBookReviews');
+    var app = angular.module('NYTBestSellers');
 
     app.controller('GenresController', function ($scope, $routeParams, $http) {
         var url = 'http://api.nytimes.com/svc/books/v3/lists/names.json?api-key=sample-key';

@@ -2,7 +2,7 @@
 
     'use strict';
 
-    var app = angular.module('NYTBookReviews', ['ngRoute']);
+    var app = angular.module('NYTBestSellers', ['ngRoute']);
 
     app.config(function ($routeProvider) {
         $routeProvider.when('/genres', {

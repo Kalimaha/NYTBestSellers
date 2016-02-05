@@ -3,7 +3,7 @@
     <head>
 
         <!-- Metadata. -->
-        <title>New York Times Book Reviews</title>
+        <title>New York Times Best Sellers</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <meta name="format-detection" content="telephone=no">
@@ -17,6 +17,8 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="src/js/app.js"></script>
         <script src="src/js/router.js"></script>
+        <script src="src/js/directives/header.js"></script>
+        <script src="src/js/directives/footer.js"></script>
         <script src="src/js/directives/book.js"></script>
         <script src="src/js/controllers/genres-controller.js"></script>
         <script src="src/js/controllers/genre-controller.js"></script>
@@ -25,7 +27,7 @@
         <!-- Stylesheets. -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="src/css/NYTMovieReviews.css">
+        <link rel="stylesheet" href="src/css/NYTBestSellers.css">
 
         <!-- Analytics. -->
         <script>
@@ -39,22 +41,10 @@
 
     </head>
 
-    <body ng-app="NYTBookReviews">
+    <body ng-app="NYTBestSellers">
 
         <!-- Header. -->
-        <nav class="navbar navbar-default navbar-fixed-top dark text-center">
-            <div class="container">
-                <a href="#">
-                    <h1 class="logo-text dark nyt">
-                        The New York Times
-                        <br>
-                        <small>
-                            Book Reviews
-                        </small>
-                    </h1>
-                </a>
-            </div>
-        </nav>
+        <nyt-header></nyt-header>
 
         <!-- Main content. -->
         <div class="v-space"></div>
@@ -68,13 +58,7 @@
         <div class="v-space"></div>
 
         <!-- Footer. -->
-        <nav class="navbar navbar-default navbar-fixed-bottom dark text-center">
-            <div class="container">
-                <h5 class="logo-text">
-                    Powered by <a href="http://developer.nytimes.com/page" target="_blank"><span class="nyt">New York Times</span> API</a>
-                </h5>
-            </div>
-        </nav>
+        <nyt-footer></nyt-footer>
 
     </body>
 
