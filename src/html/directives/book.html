@@ -22,6 +22,15 @@
             </div>
         </div>
         <br>
+        <div class="row" ng-show="book.book_review_link.length > 0" style="margin-bottom: 1rem;">
+            <div class="col-lg-12">
+                <a href="{{book.book_review_link}}" target="_blank">
+                    <button class="btn btn-default">
+                        <i class="fa fa-newspaper-o"></i> Read the Review
+                    </button>
+                </a>
+            </div>
+        </div>
         <div class="row">
             <div class="col-lg-12">
                 <a href="{{book.amazon_product_url}}" target="_blank">
